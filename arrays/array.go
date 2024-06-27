@@ -12,9 +12,10 @@ type Usuario struct {
 func main() {
 
 	var revistas [4]string
-	//var revistas [4]string = [4]string{"Capricho"}
+	revistas[3] = "Capricho"
 	precos := [5]float64{3.90, 5.60, 10.99, 19.99, 25.00}
 	revistas[2] = "Nova"
+	revistas[1] = "Claudia"
 	fmt.Println(precos)
 	fmt.Println(revistas)
 	fmt.Println(precos[0])

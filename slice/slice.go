@@ -18,6 +18,9 @@ func main() {
 
 	test := []int{}
 	fmt.Printf("cap=%d\n", cap(test))
-	test = append(test, 1)
+	dezenas = append(dezenas, 1)
+	fmt.Printf("cap=%d\n", cap(dezenas))
 	fmt.Printf("cap=%d\n", cap(test))
+	fmt.Printf("dezenas=%d\n", dezenas)
+
 }

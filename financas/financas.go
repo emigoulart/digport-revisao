@@ -22,9 +22,9 @@ func main() {
 		total = total + valor
 		fmt.Printf("A despesa de %s é %d\n", despesa, valor)
 	}
-
-	if total > 2000 {
-		fmt.Printf("O total das despesas %d ultrapassou o seu orçamento \n", total)
+	orcamento := 12000
+	if total > orcamento {
+		fmt.Printf("O total das despesas %d ultrapassou o seu orçamento %d  \n", total, orcamento)
 	}
 	fmt.Printf("O total das despesas é %d\n", total)
 }
