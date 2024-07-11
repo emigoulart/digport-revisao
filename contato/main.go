@@ -16,6 +16,21 @@ func main() {
 	// Criando um slice para armazenar os contatos
 	contatos := []Contato{contato1, contato2}
 
+	var get_contato string
+	fmt.Printf("digite o nome do contato que deseja encontrar: ")
+	fmt.Scan(&get_contato)
+
+	var encontrado bool
+	for _, contato := range contatos {
+		if get_contato == contato.Nome {
+			encontrado = true
+			fmt.Printf("Contato Encontrado nome: %s\ntelefone: %s\nemail: %s\n\n", contato.Nome, contato.Telefone, contato.Email)
+		}
+		if !encontrado {
+			fmt.Printf("Contato %s não encontrado\n", get_contato)
+		}
+	}
+
 	// Iterando sobre os contatos e exibindo suas informações
 	for i, contato := range contatos {
 		fmt.Printf("Contato %d:\n", i+1) //pois a primeira posição é no indice zero
